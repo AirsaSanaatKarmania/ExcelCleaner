@@ -2,7 +2,7 @@
 
 # Excel Cleaner — پاک‌سازی ارقام و تبدیل اکسل به «شکل خام»
 
-[![Tests](https://github.com/YOUR_USERNAME/excel-cleaner/actions/workflows/tests.yml/badge.svg)](https://github.com/YOUR_USERNAME/excel-cleaner/actions/workflows/tests.yml)
+[![Tests](https://github.com/AirsaSanaatKarmania/ExcelCleaner/actions/workflows/tests.yml/badge.svg)](https://github.com/AirsaSanaatKarmania/ExcelCleaner/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 [English README](README.en.md)
@@ -35,7 +35,7 @@
 پایتون ۳.۹ یا بالاتر لازم است (هنگام نصب، گزینه‌ی **Add Python to PATH** و **tcl/tk** را فعال کنید).
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/excel-cleaner.git
+git clone https://github.com/AirsaSanaatKarmania/ExcelCleaner.git
 cd excel-cleaner
 py -m pip install -r requirements.txt
 py excel_cleaner.py

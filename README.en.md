@@ -1,6 +1,6 @@
 # Excel Cleaner
 
-[![Tests](https://github.com/YOUR_USERNAME/excel-cleaner/actions/workflows/tests.yml/badge.svg)](https://github.com/YOUR_USERNAME/excel-cleaner/actions/workflows/tests.yml)
+[![Tests](https://github.com/AirsaSanaatKarmania/ExcelCleaner/actions/workflows/tests.yml/badge.svg)](https://github.com/AirsaSanaatKarmania/ExcelCleaner/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 [فارسی](README.md)
