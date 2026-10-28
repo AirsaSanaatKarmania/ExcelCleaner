@@ -1,0 +1,32 @@
+name: Build Windows EXE
+
+# هر وقت تگی مثل v1.0.0 بسازید، exe ساخته و به Releases اضافه می‌شود.
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt pyinstaller
+      - run: pyinstaller --onefile --windowed --clean --collect-submodules tksheet --name ExcelCleaner excel_cleaner.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ExcelCleaner-windows
+          path: dist/ExcelCleaner.exe
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/ExcelCleaner.exe
+          generate_release_notes: true
